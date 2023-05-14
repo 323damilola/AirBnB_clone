@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""
-    Defines unittests for models/place.py.
+"""Defines unittests for models/place.py.
 
-    Unittest classes:
+Unittest classes:
     TestPlace_instantiation
     TestPlace_save
     TestPlace_to_dict
@@ -16,9 +15,7 @@ from models.place import Place
 
 
 class TestPlace_instantiation(unittest.TestCase):
-    """
-    Unittests for testing instantiation of the Place class.
-    """
+    """Unittests for testing instantiation of the Place class."""
 
     def test_no_args_instantiates(self):
         self.assertEqual(Place, type(Place()))
@@ -148,9 +145,7 @@ class TestPlace_instantiation(unittest.TestCase):
 
 
 class TestPlace_save(unittest.TestCase):
-    """
-    Unittests for testing save method of the Place class.
-    """
+    """Unittests for testing save method of the Place class."""
 
     @classmethod
     def setUp(self):
@@ -201,9 +196,7 @@ class TestPlace_save(unittest.TestCase):
 
 
 class TestPlace_to_dict(unittest.TestCase):
-    """
-    Unittests for testing to_dict method of the Place class.
-    """
+    """Unittests for testing to_dict method of the Place class."""
 
     def test_to_dict_type(self):
         self.assertTrue(dict, type(Place().to_dict()))
